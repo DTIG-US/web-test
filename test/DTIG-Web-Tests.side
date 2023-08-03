@@ -1,0 +1,61 @@
+{
+  "id": "d76ba258-49e5-488c-aab7-a329a3c23545",
+  "version": "2.0",
+  "name": "DTIG-Web-Tests",
+  "url": "https://www.dtig.us",
+  "tests": [{
+    "id": "583bc3d4-6b2f-4f38-8519-bf1cffa50e27",
+    "name": "Check Team Menu Links",
+    "commands": [{
+      "id": "f5e3aaba-32ec-4c9b-a0dd-00f25925906c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "821f0c92-9a0f-4866-b6fb-66e777c7df7c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1904x993",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3a2b7f7-e998-471f-8794-19e5fd946f49",
+      "comment": "",
+      "command": "click",
+      "target": "css=nav > a",
+      "targets": [
+        ["css=nav > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Menu')]", "xpath:link"],
+        ["xpath=//header[@id='header']/nav/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#menu')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3cd8d38-3199-46ba-b4fe-d2b19509a7c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.links > li:nth-child(5) > a",
+      "targets": [
+        ["css=.links > li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Our Team')]", "xpath:link"],
+        ["xpath=//nav[@id='menu']/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'pages/our_team.html')]", "xpath:href"],
+        ["xpath=//nav/div/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ce499b1f-afba-42bc-b8e5-cc1e6e936aa2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["583bc3d4-6b2f-4f38-8519-bf1cffa50e27"]
+  }],
+  "urls": [],
+  "plugins": []
+}
