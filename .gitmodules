@@ -1,15 +1,3 @@
-[submodule "app/web-header"]
-	path = app/web-header
-	url = https://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@github.com/DTIG-US/web-header.git
-	branch = qa
-[submodule "app/web-carousel"]
-	path = app/web-carousel
-	url = https://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@github.com/DTIG-US/web-carousel.git
-	branch = qa
-[submodule "app/web-partner"]
-	path = app/web-partner
-	url = https://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@github.com/DTIG-US/web-partner.git
-	branch = qa
 [submodule "src/app/web-header"]
 	path = src/app/web-header
 	url = https://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@github.com/DTIG-US/web-header.git
@@ -22,3 +10,4 @@
 	path = src/app/web-partner
 	url = https://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@github.com/DTIG-US/web-partner.git
 	branch = qa
+	
