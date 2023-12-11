@@ -1,0 +1,64 @@
+{
+  "id": "467d9d54-ef5a-4891-b752-f924affd9e61",
+  "version": "2.0",
+  "name": "Assets",
+  "url": "https://qa.dtig.us",
+  "tests": [{
+    "id": "b21e5e82-e115-4432-91dd-c727cc98a3ce",
+    "name": "LogoPresent",
+    "commands": [{
+      "id": "9d5bd063-e74c-4796-acfa-e71d9634b54d",
+      "comment": "",
+      "command": "open",
+      "target": "/assets/images/DTIG-Logo.png",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37ed273a-de91-44aa-9e80-f09a650e78f5",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://qa.dtig.us/assets/images/DTIG-Logo.png')]", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6d5be5ff-c7f1-44a7-bbd3-c4d6d16d5339",
+    "name": "BackgroundPresent",
+    "commands": []
+  }, {
+    "id": "5be9382a-af2e-4ffb-bc79-2551b39f397f",
+    "name": "FavIconPresent",
+    "commands": [{
+      "id": "3881beaf-ab89-492a-8e80-82dc1d6b806e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54712c10-945a-42b1-b49f-4112e341f277",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f55e21da-573e-4c79-b088-5000a80abc61",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b21e5e82-e115-4432-91dd-c727cc98a3ce"]
+  }],
+  "urls": ["https://qa.dtig.us/"],
+  "plugins": []
+}
